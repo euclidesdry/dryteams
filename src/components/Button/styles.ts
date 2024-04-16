@@ -15,7 +15,7 @@ export const Container = styled.TouchableOpacity<ContainerProps>`
   background-color: ${({ theme, type }) =>
     type === "PRIMARY" ? theme.COLORS.GREEN_700 : theme.COLORS.RED_DARK};
 
-  border-radius: 60px;
+  border-radius: 6px;
 
   justify-content: center;
   align-items: center;
