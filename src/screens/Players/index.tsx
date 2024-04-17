@@ -1,7 +1,8 @@
-import { Container } from "./styles";
+import { Container, Form } from "./styles";
 import { Header } from "../../components/Header/index";
 import { Highlight } from "../../components/Highlight/index";
 import { ButtonIcon } from "~components/ButtonIcon";
+import { Input } from "../../components/Input/index";
 
 type PlayersProps = {};
 
@@ -15,7 +16,10 @@ export function Players({}: PlayersProps) {
         subtitle="adicione a galera e separe os times"
       />
 
-      <ButtonIcon />
+      <Form>
+        <Input placeholder="Nome da pessoa" autoCorrect={false} />
+        <ButtonIcon icon="add" />
+      </Form>
     </Container>
   );
 }
